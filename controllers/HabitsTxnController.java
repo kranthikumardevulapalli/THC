@@ -100,10 +100,4 @@ public class HabitsTxnController {
 		return new ResponseEntity<List<Habit>>(habit, HttpStatus.OK);
 	}
 	
-	@GetMapping("habits/{id}")
-	public ResponseEntity<Habit> getByHabitId(@PathVariable("id") int no) {
-		Habit habit = habitService.getByHabit(no);
-		return new ResponseEntity<Habit>(habit, HttpStatus.OK);
-	}
-	
 }
